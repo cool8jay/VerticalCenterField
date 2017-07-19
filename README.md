@@ -1,6 +1,6 @@
 # VerticalCenterField
 
-**VerticalCenterField** is a vertical center text field written in [Objective-C](https://developer.apple.com/swift/).
+**VerticalCenterField** is a vertical center text field written in [Objective-C](https://en.wikipedia.org/wiki/Objective-C).
 
 ![screenshot](https://github.com/cool8jay/VerticalCenterField/blob/master/ScreenShot.png?raw=true)
 
