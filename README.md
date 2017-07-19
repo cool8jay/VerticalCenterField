@@ -2,6 +2,8 @@
 
 **VerticalCenterField** is a vertical center text field written in [Objective-C](https://developer.apple.com/swift/).
 
+![screenshot](https://github.com/cool8jay/VerticalCenterField/blob/master/ScreenShot.png?raw=true)
+
 ## How To Use
 
 1. Add a NSTextField into xib or storyboard canvas, change the field's cell Custom Class to "VerticalCenterCell" in identity panel.
