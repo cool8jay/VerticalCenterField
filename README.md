@@ -6,7 +6,7 @@
 
 ## How To Use
 
-1. Add a NSTextField into xib or storyboard canvas, change the field's cell Custom Class to "VerticalCenterCell" in identity panel.
+1. Add a NSTextField into xib or storyboard canvas, change the field's cell Custom Class to "VerticalCenterCell" in identity panel. Keep the border property to "no border"(the second segment) and uncheck "Draws Background"
 2. Or, create a NSTextField programmatically, set necessary properties.
 
 ## System Requirements

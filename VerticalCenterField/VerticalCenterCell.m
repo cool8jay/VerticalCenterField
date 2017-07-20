@@ -24,10 +24,15 @@
     return newRect;
 }
 
-// if the text field is only used in xib, this method can be omitted
+- (void)selectWithFrame:(NSRect)aRect inView:(NSView *)controlView editor:(NSText *)textObj delegate:(nullable id)anObject start:(NSInteger)selStart length:(NSInteger)selLength{
+    aRect = [self drawingRectForBounds:aRect];
+    
+    [super selectWithFrame:aRect inView:controlView editor:textObj delegate:anObject start:selStart length:selLength];
+}
+
 - (void)drawInteriorWithFrame:(NSRect)cellFrame
                        inView:(NSView*)controlView{
-    NSBezierPath *path = [NSBezierPath bezierPathWithRoundedRect:NSInsetRect(cellFrame, 0, 0) xRadius:0 yRadius:0];
+    NSBezierPath *path = [NSBezierPath bezierPathWithRoundedRect:NSInsetRect(cellFrame, 4, 4) xRadius:3 yRadius:3];
     path.lineWidth = 1;
     
     NSColor *fillColor = [NSColor whiteColor];
@@ -40,6 +45,12 @@
     [path stroke];
     
     [super drawInteriorWithFrame:cellFrame inView:controlView];
+}
+
+
+- (void)drawFocusRingMaskWithFrame:(NSRect)cellFrame inView:(NSView *)controlView {
+    NSRect rect = NSInsetRect(cellFrame, 4, 4);
+    [super drawFocusRingMaskWithFrame:rect inView:controlView];
 }
 
 @end

@@ -19,7 +19,6 @@
     cell.placeholderString = @"I'm from code";
     cell.editable = YES;
     cell.scrollable = YES;
-    cell.bordered = YES;    // MUST enable this!
     cell.alignment = NSTextAlignmentCenter;
     
     field.cell = cell;
